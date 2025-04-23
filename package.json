@@ -1,6 +1,6 @@
 {
   "name": "app1-react-sidebar",
-  "homepage": "/1",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
