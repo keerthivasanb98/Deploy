@@ -5,7 +5,7 @@ metadata:
   labels:
     app: react-app
 spec:
-  replicas: 1  # Number of instances of the app to run
+  replicas: 1
   selector:
     matchLabels:
       app: react-app
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: react-app
-          image: keerthivasanb2025/react-app:latest  # Your Docker image
+          image: keerthivasanb2025/react-app:latest
           ports:
             - containerPort: 80
 ---
@@ -29,6 +29,6 @@ spec:
     app: react-app
   ports:
     - protocol: TCP
-      port: 80  # Port to expose on the service
-      targetPort: 80  # Port to forward to the container
-  type: LoadBalancer  # Exposes the app externally (Change to ClusterIP if internal only)
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
